@@ -12,11 +12,11 @@ const chainMaker = {
   },
   addLink(value) {
     this.result = `( ${value} )`;
-    this.arr.push(this.result);
+    this.arr.push(String(this.result));
   	return this;
   },
   removeLink(position) {
-  let delNum = position - 1;
+    let delNum = position - 1;
     
   	if(delNum < 0 || delNum > this.arr.length){
       throw Error('THROWN');
